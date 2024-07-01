@@ -9,7 +9,7 @@ function LandingPage() {
 
     useEffect(() => {
         const getData = async () => {
-            const result = await axios.get('http://localhost:3000/user/getinfo');
+            const result = await axios.get('https://simpplr-slackclone.onrender.com/user/getinfo');
             setEmail(result.data.email);
         };
 

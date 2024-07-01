@@ -26,7 +26,7 @@ function Register() {
         };
 
         try{
-            const result = await axios.post('http://localhost:3000/user/register', userObject);
+            const result = await axios.post('https://simpplr-slackclone.onrender.com/user/register', userObject);
             console.log(result.data);
         }catch(e){
             console.log(e.error);

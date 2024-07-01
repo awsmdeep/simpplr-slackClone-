@@ -27,7 +27,7 @@ function Login() {
         };
 
         try{
-            const result = await axios.get('http://localhost:3000/user/getinfo');
+            const result = await axios.get('https://simpplr-slackclone.onrender.com/user/getinfo');
             if(result.data.email == userEmail){
               console.log("Email verified");
               setmatches(true);

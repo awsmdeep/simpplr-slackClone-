@@ -15,7 +15,7 @@ const DirectMessageChat = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const result = await axios.get('http://localhost:3000/user/getinfo');
+            const result = await axios.get('https://simpplr-slackclone.onrender.com/user/getinfo');
             const trimmedMail = result.data.email.replace('@gmail.com','');
             console.log(trimmedMail);
             setEmail(trimmedMail);
