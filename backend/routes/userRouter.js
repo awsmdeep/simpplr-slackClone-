@@ -5,7 +5,7 @@ const { User } = require('../db/database');
 
 // Importing the database models
 
-router.post('/user/register', async (req,res) => {
+router.post('https://simpplr-slackclone.onrender.com/user/register', async (req,res) => {
     const userSchema = zod.object({
         email : zod.string().email()
     });
@@ -27,7 +27,7 @@ router.post('/user/register', async (req,res) => {
     }
 });
 
-router.get('/user/getinfo', async (req,res) => {
+router.get('https://simpplr-slackclone.onrender.com/user/getinfo', async (req,res) => {
     try{
         const user = await User.find({});
         res.send(user[0]);
